@@ -1,0 +1,2 @@
+#!/bin/bash
+[[ $(stat -c '%U' hello) = "guillaume" ]] && chown betty hello && echo "Owner of 'hello' changed to 'betty'." || echo "Owner of 'hello' is not 'guillaume'. No changes made."
