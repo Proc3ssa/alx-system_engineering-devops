@@ -1,2 +1,2 @@
 #!/bin/bash
-while IFS= read -r line; do echo "${line//A/Z}" | sed 's/c/e/g'; done 
+while IFS= read -r line; do echo "$line" | tr 'Ac' 'Ze'; done
