@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "Result in base bestchol: $(echo "obase=bestchol; ibase=water; $WATER + ibase=stir; $STIR" | bc)"

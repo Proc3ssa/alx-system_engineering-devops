@@ -1,0 +1,2 @@
+#!/bin/bash
+print(*[line for i, line in enumerate((open(input("Enter 'input' to type lines or 'file <filename>' to read from a file: ").strip().split(maxsplit=1) + [None])[1] if "file" in input().lower() else None) and open(input("Enter filename: ")) or iter(input, "exit")), sep="\n")

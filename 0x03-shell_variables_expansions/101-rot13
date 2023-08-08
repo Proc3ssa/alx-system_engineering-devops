@@ -1,0 +1,2 @@
+#!/bin/bash
+print(''.join([chr((ord(c) - 65 + 13) % 26 + (65 if 'A' <= c <= 'Z' else 97 if 'a' <= c <= 'z' else 0)) for c in input("Enter the text to encode/decode: ")]))
